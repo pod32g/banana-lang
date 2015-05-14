@@ -35,10 +35,10 @@ Function read_compile(String input, String output) Start
 	System(command.c_str());
 
 	If remove( name.c_str() ) != 0 Then Start
-		Print "Error";
+		Print "Error\n";
 	End
 	else{
-		Print "Fine";
+		Print "Fine\n";
 	}
 End
 
