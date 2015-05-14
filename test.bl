@@ -1,0 +1,37 @@
+Integer banana(Integer l) Start
+	Return l;
+End
+
+Class lol Start
+	Public
+		Function test() Start
+			for (Integer i = 0; i < 10; ++i) Start
+				Print i Jump;
+			End
+		End
+EndClass
+
+Main Start
+	
+	Print "Test" Jump;
+
+	If Begin 1 Is 1 Then Start
+		Print "Hello World\n";
+	End
+
+	Integer x = 0;
+	Integer y = 0;
+
+	lol();
+
+	If Begin x == 0 Or y == 1 Then Start
+		Print "TRUE\n";
+	End
+
+	Integer f ;
+	Read f;
+	Print banana(f) Jump;
+	lol d;
+	d.test();
+	System ("pause") ;
+End
