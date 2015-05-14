@@ -5,7 +5,7 @@ End
 Class lol Start
 	Public
 		Function test() Start
-			for (Integer i = 0; i < 10; ++i) Start
+			For Integer i = 0; i < 10; ++i Then Start
 				Print i Jump;
 			End
 		End

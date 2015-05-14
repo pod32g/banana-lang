@@ -33,3 +33,5 @@
 #define Protected protected:
 #define System std::system
 #define If if(
+#define For for(
+#define While while(

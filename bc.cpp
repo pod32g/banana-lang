@@ -18,9 +18,9 @@ Function read_compile(String input, String output) Start
 	
 		String line;
 
-		while(std::getline(read, line)){
+		While std::getline(read, line) Then Start
 			write << line << "\n";
-		}
+		End
 
 	End
 		//Print name;
