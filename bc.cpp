@@ -38,7 +38,7 @@ Function read_compile(String input, String output) Start
 		Print "Error\n";
 	End
 	else{
-		Print "Fine\n";
+		Print "Done\n";
 	}
 End
 
@@ -46,7 +46,7 @@ int main(int argc, char const *argv[])
 {
 	//Print argc << std::endl;
 	if (argc < 3){
-		Print "Usage: \"bc output source\"\n";
+		Print "Usage: bc: fatal error: no input files\n";
 		return 1;
 	}else{
 		read_compile(argv[2], argv[1]);
