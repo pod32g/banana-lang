@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
+#include <list>
 
 #define Start {
 #define End }
@@ -35,3 +36,9 @@
 #define If if(
 #define For for(
 #define While while(
+#define Else else {
+
+template <typename Type>
+void println(Type object) {
+	std::cout<<object<<std::endl;
+}

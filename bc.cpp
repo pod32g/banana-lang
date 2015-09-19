@@ -19,13 +19,20 @@ Function read_compile(String input, String output) Start
 		String line;
 
 		While std::getline(read, line) Then Start
-			write << line << "\n";
+			If line.find("Start") != std::string::npos Or line.find("End") != std::string::npos Or line == ""  Then Start 
+				write << line << "\n";
+			End
+			Else 
+				line += ";";
+				write << line << "\n";
+			End
 		End
 
 	End
 		//Print name;
 	read.close();
 	write.close();
+
 
 	String command = "g++ -o ";
 	command += output;
@@ -40,6 +47,7 @@ Function read_compile(String input, String output) Start
 	else{
 		Print "Done\n";
 	}
+	
 End
 
 int main(int argc, char const *argv[])
