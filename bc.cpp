@@ -19,7 +19,7 @@ Function read_compile(String input, String output) Start
 		String line;
 
 		While std::getline(read, line) Then Start
-			If line.find("Start") != std::string::npos Or line.find("End") != std::string::npos Or line == ""  Then Start 
+			If line.find("#define") != std::string::npos Or line.find("#include") != std::string::npos Or line.find("Start") != std::string::npos Or line.find("End") != std::string::npos Or line == ""  Then Start 
 				write << line << "\n";
 			End
 			Else 
@@ -38,15 +38,12 @@ Function read_compile(String input, String output) Start
 	command += output;
 	command += " ";
 	command += name;
-
+    
 	System(command.c_str());
 
 	If remove( name.c_str() ) != 0 Then Start
 		Print "Error\n";
 	End
-	else{
-		Print "Done\n";
-	}
 	
 End
 
